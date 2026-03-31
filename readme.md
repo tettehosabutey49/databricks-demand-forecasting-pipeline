@@ -19,9 +19,7 @@ The code is organized as notebook-like Python scripts in `notebooks/`.
 - `notebooks/03_model_training.py` : Train and compare Linear Regression, GBT, Random Forest; log with MLflow.
 - `notebooks/04_delta_deployment.py` : Train final model on full dataset, produce predictions table (`demand_forecast_predictions`), show Delta history.
 - `notebooks/05_kafka_streaming.py` : Simulate streaming ingestion using `rate` source, generate features and score model in streaming mode.
-- `PROJECT_CONTEXT.md`           : Project context notes.
-- `TECHNICAL_DOCUMENTATION.md`   : Detailed project walkthrough (local only, ignored by Git).
-- `.gitignore` includes `dbenv/` and `TECHNICAL_DOCUMENTATION.md`.
+
 
 ## Key Technologies
 
@@ -101,7 +99,7 @@ Starts a micro-batch generated stream via `rate` and scores with a linear model,
 
 - Ensure you're running in a Databricks runtime or environment where `spark` is available.
 - The notebooks use in-memory synthetic and streaming data for demo and testing.
-- `TECHNICAL_DOCUMENTATION.md` is intentionally excluded from commit history.
+
 
 ## Validation
 
