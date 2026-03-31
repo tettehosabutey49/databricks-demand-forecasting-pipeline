@@ -61,4 +61,3 @@ df_delta = spark.read.table(table_name)
 print(f"✓ Verified: {df_delta.count()} rows in delta table")
 df_delta.show(3)
 
-print("\n✓ STEP 1 COMPLETE")

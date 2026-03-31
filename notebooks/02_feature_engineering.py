@@ -64,4 +64,3 @@ print(f"\n✓ Saved {df.count()} rows to {feature_table}")
 df_features = spark.read.table(feature_table)
 print(f"✓ Verified: {df_features.count()} rows")
 
-print("\n✓ STEP 2 COMPLETE")
